@@ -904,19 +904,21 @@ readInstructionsBtn?.addEventListener("click", () => {
 // ===============================
 // LOGOUT SYSTEM
 // ===============================
-const logoutBtn = document.getElementById("logoutBtn");
+const logoutBtns = document.querySelectorAll("#logoutBtn");
 
-logoutBtn?.addEventListener("click", () => {
-  const confirmLogout = confirm("Are you sure you want to logout?");
-  if (!confirmLogout) return;
+logoutBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const confirmLogout = confirm("Are you sure you want to logout?");
+    if (!confirmLogout) return;
 
-  // remove login session
-  localStorage.removeItem("isLoggedIn");
-  localStorage.removeItem("userRole");
-  localStorage.removeItem("voterName");
+    // remove login session
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("userRole");
+    localStorage.removeItem("voterName");
 
-  // redirect to login
-  window.location.href = "login.html";
+    // redirect to login
+    window.location.href = "login.html";
+  });
 });
 const mobileBtns = document.querySelectorAll(".mobileNavBtn");
 const sections = document.querySelectorAll(".tabSection");
