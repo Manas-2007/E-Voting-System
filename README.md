@@ -8,7 +8,7 @@ Admins have control over the election process, including starting or stopping th
 
 The interface is designed with a modern UI layout and works smoothly across desktop, tablet, and mobile devices.
 
-Key Features
+Key Features<br/>
 • Secure voter login simulation  
 • Role-based interface (Admin / Voter)  
 • Responsive dashboard with tab navigation  
@@ -20,16 +20,16 @@ Key Features
 • Graph-based result visualization  
 • Fully responsive mobile sidebar navigation  
 
-Technologies Used
+Technologies Used<br/>
 HTML  
 Tailwind CSS  
 JavaScript (Vanilla JS)  
 LocalStorage for state simulation
 
-Purpose of the Project
+Purpose of the Project<br/>
 This project was created as a front-end practice project to simulate a real-world digital voting system interface and demonstrate UI design, state management, and responsive dashboard development.
 
-Future Improvements
+Future Improvements<br/>
 • Backend integration (Node.js / Express)  
 • Database storage for votes  
 • Authentication system  
